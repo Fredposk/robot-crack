@@ -15,7 +15,7 @@ const Footer = () => {
             >
                 LinkedIn
             </button>
-            <div className='cursor-pointer '>More</div>{' '}
+            {/* <div className='cursor-pointer'>|</div> */}
             <button
                 onClick={() =>
                     window.open('https://github.com/Fredposk', '_blank')
