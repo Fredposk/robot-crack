@@ -2,9 +2,20 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='flex justify-around py-1 text-gray-400 uppercase bg-black font-extralight'>
-            <div className='cursor-pointer'>Privacy</div>
-            <div className='cursor-pointer'>Legal</div>{' '}
+        <div className='flex justify-around py-1 font-light text-gray-400 bg-black'>
+            <button
+                onClick={() =>
+                    window.open(
+                        'https://www.linkedin.com/in/frederico-ponki-k%C3%BCckelhaus/',
+                        '_blank'
+                    )
+                }
+                rel='noopener noreferrer'
+                className='cursor-pointer'
+            >
+                LinkedIn
+            </button>
+            <div className='cursor-pointer '>More</div>{' '}
             <button
                 onClick={() =>
                     window.open('https://github.com/Fredposk', '_blank')
