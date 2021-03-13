@@ -22,19 +22,18 @@ const Nav = () => {
             </div>
             {isOpen && (
                 <div className='absolute z-20 w-full bg-gray-400 '>
-                    {' '}
-                    <div className='py-2 border-b border-black'>
-                        {' '}
-                        Hello World
-                    </div>
-                    <div className='py-2 border-b border-black'>
-                        {' '}
-                        Hello World
-                    </div>
-                    <div className='py-2 border-b border-black'>
-                        {' '}
-                        Hello World
-                    </div>
+                    <Link className='' to={'/favorites'}>
+                        <div className='py-2 border-b border-black'>
+                            {' '}
+                            Favorites
+                        </div>
+                    </Link>
+                    <Link className='' to={'/search'}>
+                        <div className='py-2 border-b border-black'>
+                            {' '}
+                            Search
+                        </div>
+                    </Link>
                     <Link className='' to={'/about'}>
                         <div className='py-2 border-b border-black'> about</div>
                     </Link>

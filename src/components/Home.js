@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Nav />
             <div className='flex flex-col items-center mt-4 space-y-3'>
-                <Link to='/arrays' className='relative w-11/12 shadow-lg'>
+                <Link to='/Arrays' className='relative w-11/12 shadow-lg'>
                     <img
                         className='rounded-lg '
                         src='https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2167&q=80'
