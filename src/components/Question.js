@@ -1,19 +1,28 @@
 import React from 'react';
 import Nav from './Nav';
 import Footer from './Footer';
+import Qfoto from './Qfoto';
+import { useState } from 'react';
+import Tips from './Tips';
+import Questionword from './Questionword';
 
-const About = () => {
+const Question = () => {
+    const [page, setPage] = useState('question');
+    console.log(page);
+
     return (
         <>
             <Nav />
-
-            <div className='flex justify-center py-2 bg-red-700'>
-                <img
-                    className=''
-                    src='https://i.ibb.co/XxcKZJP/Screenshot-2021-03-13-at-01-03-02.png'
-                    alt='Code'
-                />
+            <div className='flex justify-evenly'>
+                <button onClick={() => setPage('tips')}>Tips</button>
+                <button onClick={() => setPage('question')}>Question</button>
+                <button onClick={() => setPage('code')}>Code</button>
             </div>
+
+            {page === 'code' ? <Qfoto /> : ''}
+            {page === 'question' ? <Questionword /> : ''}
+            {page === 'tips' ? <Tips /> : ''}
+
             <div className='fixed inset-x-0 bottom-0'>
                 <Footer />
             </div>
@@ -21,4 +30,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Question;
